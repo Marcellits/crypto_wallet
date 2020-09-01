@@ -1,0 +1,14 @@
+<h1>Welcome!</h1>
+<p>Date: <%=date_us(Date.today)%></p>
+<%=app_name%>
+<p>
+    Hello, <%= @my_name %>
+</p>
+<ul>
+    <li>
+        <%= link_to "Coins Register", coins_path %>
+    </li>
+</ul>
+<p>
+    Environment: <%= env_rails%>
+</p>
