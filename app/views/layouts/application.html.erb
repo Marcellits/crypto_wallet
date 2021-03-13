@@ -10,6 +10,8 @@
     <%= stylesheet_link_tag    'scaffolds', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery-3.6.0', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'notify', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
 </head>
 
@@ -17,6 +19,8 @@
     <h1>Header - <%= params[:controller]%> </h1>
     <%= yield %>
     <h1>Footer</h1>
-</body>
+    <script>
+        $.notify("Working", "success");
+    </script>
 
 </html>
